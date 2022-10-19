@@ -26,8 +26,12 @@
 
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
+
+    
         <h1>My Portfolio</h1>
         <h2>Week 1</h2>
+
+        <p>Our first task was to embed two interactive charts and display them on our site</p>
 
         <h3>UK budget deficit</h3>
         <p>This first chart shows the UK budget deficit over time </p>
@@ -37,38 +41,54 @@
         <p>This second chart looks carbon dioxide emissions by sector</p>
         <div class="chart" id="Chart2"></div>
 
+        <p> These charts were created by using the exemplar code on the rapid charts repository</p>
+
    
         <h2>Week 2</h2>
+
+        <p>Our next task was to embed two charts relating to IMF lending 1984-2022, one replicating that of an FT article and one improving this chart to adjust for inflation</p>
+
         <h3>IMF Loans Outstanding</h3>
-        <p>This first chart shows the IMF outstanding loans between 1984-2022 </p>
+        <p>This first chart shows the IMF outstanding loans between 1984-2022 in nominal terms </p>
         <div class="chart" id="Chart3"></div>
     
         <h3>IMF Loans Outstanding as Percentage of GDP</h3>
-        <p>This second chart shows the IMF outstanding loans between 1984-2021 as a percentage of World GDP </p>
+        <p>This second chart shows the IMF outstanding loans between 1984-2022 as a percentage of World GDP to adjust for inflation </p>
         <div class="chart" id="Chart4"></div>
 
-        <p> This chart shows infact that in terms of affordability, the large volume of loans issued in 2022 is no worse than those in 1984</p>
-     
+        <p> These charts shows that relative to GDP (and hence affordability), the IMF lent most in 1984. This suggests that 2022 was infact not the riskier year for investment, as lending was only greatest in absolute terms </p>
+       
+        <p> These charts were created by hosting data on my GitHub repository after transforming it at the analysis stage </p>
+
+        <h2>Week 3</h2>
+
+        <p> This weeks task was to convert csv data to a dictionary format (using python) to be able to visualise it </p>
+
+        <h3>Inflation </h3>
+        <p>This chart tracks two measures of inflation, CPI and RPI, between 1989-2022 </p>
+        <div class="chart" id="Chart5"></div>
+    
     </div> 
-   
+    
+
  
 </body>
-
 
 <script>
     //Define charts:
     var myChart1 = "chartPSF1.json";
     var myChart2 = "chartENV10.json";
-    var myChart3 = "chart_IMFLO.json";
+    var myChart3 = "chart_IMF.json";
     var myChart4 = "chart_IMF_GDP.json";
-    //change the names of these charts by finding other ones to use 
-    //find 2, save, put in repository and then find them 
+    var myChart5 = "chart_inf.json";
+   
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
 </script>
 
 </html>
