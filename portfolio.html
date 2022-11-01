@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>ICL Portfolio Page</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="portfolio.css">
@@ -23,55 +23,130 @@
 
 
 <body>
+ <!-- Page Header  -->
 
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
+ <h1>My Portfolio</h1>
 
-    
-        <h1>My Portfolio</h1>
-        <h2>Week 1</h2>
+<!------------------------------------------- Week 1  ----------------------------------------->
+<div class="weektitle">
+    <h2>Week 1</h2>
+</div>
 
-        <p>Our first task was to embed two interactive charts and display them on our site</p>
+    <div class="weekstyle">
 
-        <h3>UK budget deficit</h3>
-        <p>This first chart shows the UK budget deficit over time </p>
-        <div class="chart" id="Chart1"></div>
+             <p>Our first task was to embed two interactive charts from the 
+            <a href="https://rapidcharts.io/dashboards" target="_blank">Rapid Charts</a> repository and display them on our site</p>
+            
+         <div class="weekstyle2">
+            <h3>UK budget deficit</h3>
+            <p>This first chart shows the UK budget deficit over time </p>
+            <div class="chart" id="Chart1"></div>
+         </div>
 
-        <h3>UK CO2 emissions</h3>
-        <p>This second chart looks carbon dioxide emissions by sector</p>
-        <div class="chart" id="Chart2"></div>
+         <div class="weekstyle2">
+            <h3>UK CO2 emissions</h3>
+            <p>This second chart looks carbon dioxide emissions by sector</p>
+         <div class="chart" id="Chart2"></div>
+        </div>
 
         <p> These charts were created by using the exemplar code on the rapid charts repository</p>
 
-   
-        <h2>Week 2</h2>
+    </div>
+
+<!------------------------------------------- Week 2  ----------------------------------------->
+<div class="weektitle">
+    <h2>Week 2</h2>
+</div>
+        <div class="weekstyle">
 
         <p>Our next task was to embed two charts relating to IMF lending 1984-2022, one replicating that of an FT article and one improving this chart to adjust for inflation</p>
 
+   <div class="weekstyle2">
         <h3>IMF Loans Outstanding</h3>
-        <p>This first chart shows the IMF outstanding loans between 1984-2022 in nominal terms </p>
+        <p>This first chart shows IMF outstanding loans between 1984-2022 in nominal terms </p>
         <div class="chart" id="Chart3"></div>
-    
+    </div>
+
+    <div class="weekstyle2">
         <h3>IMF Loans Outstanding as Percentage of GDP</h3>
-        <p>This second chart shows the IMF outstanding loans between 1984-2022 as a percentage of World GDP to adjust for inflation </p>
+        <p>This second chart shows IMF outstanding loans between 1984-2022, adjusted for inflation </p>
         <div class="chart" id="Chart4"></div>
+    </div>
 
         <p> These charts shows that relative to GDP (and hence affordability), the IMF lent most in 1984. This suggests that 2022 was infact not the riskier year for investment, as lending was only greatest in absolute terms </p>
        
         <p> These charts were created by hosting data on my GitHub repository after transforming it at the analysis stage </p>
 
-        <h2>Week 3</h2>
+    </div>
+<!------------------------------------------- Week 3----------------------------------------- -->
+<div class="weektitle">
+    <h2>Week 3</h2>
+</div>
 
-        <p> This weeks task was to convert csv data to a dictionary format (using python) to be able to visualise it </p>
+    <div class="weekstyle">
 
-        <h3>Inflation </h3>
+        <p> This weeks task was to convert csv data to a dictionary format (using python) to be able to visualise it. </p>
+
+    <div class="weekstyle2">
+        <h3>Line Chart </h3>
+        <div class="chartweek3" id="Chart5"></div>
+    </div>
+
+    <div class="weekstyle2">
+        <h3>Bar Chart </h3>
+        <div class="chartweek3" id="Chart6"></div>
+    </div>
+
+    <div class="text">
+        <p> I changed the visual encoding between the two charts by presenting the information in a bar and a line chart. 
+            The bar chart is hard to interpret as the bars are stacked instead of offset due to the large number of data points- 
+            this justifies  the use of a line chart for time series with lots of observations. </p>
+        </div>
+    </div>
+
+<!------------------------------------------- Week 4 ------------------------------------------->
+<div class="weektitle">
+    <h2>Week 4</h2>
+</div>
+    <div class="weekstyle">
+
+        <p> This weeks task was to convert csv data to a dictionary format (using python) to be able to visualise it. The analysis was conducted in 
+            <a href="https://colab.research.google.com/drive/1Rr7OjrgTrVIaLJ3SlO91Pk8TJ8Sr8vtj?usp=sharing" target="_blank">Google Colab</a>
+             </p>
+
+        <h3>London 2012 Olymics Medal Table </h3>
+        <div class="chartweek4" id="Chart7"></div>
+        <p>This chart uses an html scraper of a table displayed online at ESPN. I chose this website becase it was clearly coded with the table tag, which I could copy, save as an html and then read in pandas</p>
+       
+        
+    </div>
+<!------------------------------------------- Week 5  ------------------------------------------->
+<div class="weektitle">
+    <h2>Week 5</h2>
+</div>
+    <div class="weekstyle">  
+
+        <p> This weeks task was to batch download data from the ONS using loops. I conducted the analysis using python in 
+            <a href="https://colab.research.google.com/drive/15vWuI8MDRnxEPRXj_YaA0XaYE0TzpQWC?usp=sharing" target="_blank">Google Colab</a>. 
+        
+            
+        </p>
+
+        <h3>Unemployment Dashboard </h3>
         <p>This chart tracks two measures of inflation, CPI and RPI, between 1989-2022 </p>
-        <div class="chart" id="Chart5"></div>
-    
+        <div class="chartweek5" id="Chart9"></div>
+        <div class="chartweek5" id="Chart10"></div>
+        <div class="chartweek5" id="Chart11"></div>
+        <div class="chartweek5" id="Chart12"></div>
+        <div class="chartweek5" id="Chart13"></div>
+        <div class="chartweek5" id="Chart14"></div>
+        <div class="chartweek5" id="Chart15"></div>
+        <div class="chartweek5" id="Chart16"></div>
+        <div class="chartweek5" id="Chart17"></div>
     </div> 
     
+    <!------------------------------------------- Week 7  ------------------------------------------->
 
- 
 </body>
 
 <script>
@@ -81,7 +156,18 @@
     var myChart3 = "chart_IMF.json";
     var myChart4 = "chart_IMF_GDP.json";
     var myChart5 = "chart_inf.json";
-   
+    var myChart6 = "chart_inf_edited.json";
+    var myChart7 = "chart_medals.json";
+    var myChart8 = "data_scraper_beautiful_soup.json";
+    var myChart9 = "chart_ons_total.json";
+    var myChart10 = "chart_ons_men.json";
+    var myChart11 = "chart_ons_women.json";
+    var myChart12 = "chart_ons_16.json";
+    var myChart13 = "chart_ons_1824.json";
+    var myChart14 = "chart_ons_2534.json";
+    var myChart15 = "chart_ons_3549.json";
+    var myChart16 = "chart_ons_5064.json";
+    var myChart17 = "chart_ons_65+.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -89,6 +175,19 @@
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+   
 </script>
 
 </html>
