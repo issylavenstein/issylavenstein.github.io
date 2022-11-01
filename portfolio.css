@@ -52,6 +52,7 @@ h3{text-decoration: underline;}
     align-content: center;
     max-width: 900px;
     background-color: #EAEAEA;
+    padding: 30px
 }
 
 /* Div to put each of the weekly tasks into */
@@ -96,12 +97,13 @@ h3{text-decoration: underline;}
     align-items: center;
     background-color: white;
     width:415px;
+    height:340px;
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
     border-color: #313d5a;
     margin-left: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 /* Setting the apperance of the Week 4 chart, which is a standalone*/
 .chartweek4{
