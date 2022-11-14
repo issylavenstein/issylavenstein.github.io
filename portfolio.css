@@ -131,3 +131,16 @@ h3{text-decoration: underline;}
     margin-left: 30px;
     margin-bottom: 30px;
 }
+/*Setting the apperance of the the larger UK map: use for the Week 7 task */
+.chartweek7{ 
+    align-items: center;
+    background-color: white;
+    width:415px;
+    height:400px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 10px;
+    margin-bottom: 20px; 
+}

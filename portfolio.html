@@ -146,7 +146,28 @@
     </div> 
     
     <!------------------------------------------- Week 7  ------------------------------------------->
-
+    <div class="weektitle">
+        <h2>Week 7</h2>
+    </div>
+    
+        <div class="weekstyle">
+    
+            <p> This weeks task was to produce a new base map using GeoJSON, and then to convert this to a choropleth map by matching the map GeoJSON with
+                another dataset to producing a colour tinted map </p>
+    
+        <div class="weekstyle2">
+            <h3>GB Base Map </h3>
+            <div class="chart" id="Chart18"></div>
+        </div>
+    
+        <div class="weekstyle2">
+            <h3>Median House Prices in Great Britain </h3>
+            <div class="chartweek7" id="Chart19"></div>
+        </div>
+    
+        <div class="text">
+            <p> In my visualisation, I added a slider to allow the user to see how prices change over the last 15 years. Evidently, prices have 
+                risen quickly, with the increase concentrated around London and the South East.  </p>
 </body>
 
 <script>
@@ -168,6 +189,8 @@
     var myChart15 = "chart_ons_3549.json";
     var myChart16 = "chart_ons_5064.json";
     var myChart17 = "chart_ons_65+.json";
+    var myChart18 = "chart_base_map.json";
+    var myChart19 = "chart_house_price_map.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -187,6 +210,8 @@
     vegaEmbed('#Chart15', myChart15);
     vegaEmbed('#Chart16', myChart16);
     vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
    
 </script>
 
