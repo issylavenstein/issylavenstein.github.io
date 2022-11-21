@@ -114,7 +114,7 @@
             <a href="https://colab.research.google.com/drive/1Rr7OjrgTrVIaLJ3SlO91Pk8TJ8Sr8vtj?usp=sharing" target="_blank">Google Colab</a>
              </p>
 
-        <h3>London 2012 Olymics Medal Table </h3>
+        <h3>London 2012 Olympics Medal Table </h3>
         <div class="chartweek4" id="Chart7"></div>
         <p>This chart uses an html scraper of a table displayed online at ESPN. I chose this website becase it was clearly coded with the table tag, which I could copy, save as an html and then read in pandas</p>
        
@@ -134,6 +134,7 @@
 
         <h3>Unemployment Dashboard </h3>
         <p>This chart tracks two measures of inflation, CPI and RPI, between 1989-2022 </p>
+        <div class="chartweek5" id="Chart8"></div>
         <div class="chartweek5" id="Chart9"></div>
         <div class="chartweek5" id="Chart10"></div>
         <div class="chartweek5" id="Chart11"></div>
@@ -142,7 +143,6 @@
         <div class="chartweek5" id="Chart14"></div>
         <div class="chartweek5" id="Chart15"></div>
         <div class="chartweek5" id="Chart16"></div>
-        <div class="chartweek5" id="Chart17"></div>
     </div> 
     
     <!------------------------------------------- Week 7  ------------------------------------------->
@@ -157,21 +157,90 @@
     
         <div class="weekstyle2">
             <h3>GB Base Map </h3>
-            <div class="chart" id="Chart18"></div>
+            <div class="chart" id="Chart17"></div>
         </div>
     
         <div class="weekstyle2">
             <h3>Median House Prices in Great Britain </h3>
-            <div class="chartweek7" id="Chart19"></div>
+            <div class="chartweek7" id="Chart18"></div>
         </div>
     
         <div class="text">
             <p> In my visualisation, I added a slider to allow the user to see how prices change over the last 15 years. Evidently, prices have 
                 risen quickly, with the increase concentrated around London and the South East.  </p>
+            </div>
+
+        </div>
+
+
+        <!------------------------------------------- Week 8  ------------------------------------------->
+        <div class="weektitle">
+            <h2>Week 8</h2>
+        </div>
+        
+            <div class="weekstyle">
+        
+                <p> This weeks task was to produce two charts that support or refute an argument at the
+                    Festival of Economics. </p>
+    
+                    <p>Sarah Smith argued that the cost of living crisis is most detrimentally affecting 
+                        those at the bottom end of the income distribution, and that their experienced inflation
+                        is likely much higher than the reported 10% average for all households.
+                    </p>
+        
+                <h3>Causes of Rising Inflation </h3>
+                <div class="chartweek8" id="Chart19"></div>
+    
+         
+                <h3>Breakdown of Spending by Income Quartile </h3>
+                <div class="chartweek8" id="Chart20"></div>
+        
+        
+            <div class="text">
+                <p> I created two charts in support of this statement. The first chart shows that housing costs and food are the largest contributions to 
+                    total CPIH inflation. Chart B highlights how these two goods take up a greater proportion spending for those on lower incomes.  </p>
+                </div>
+            </div>
+
+ <!------------------------------------------- Week 9  ------------------------------------------->
+    <div class="weektitle">
+        <h2>Week 9</h2>
+    </div>
+    
+        <div class="weekstyle">
+    
+            <p> This weeks task was to produce two charts that use advanced analytics such as scatter and bubble plots, 
+                histograms, detrended shock analysis, Diff in Diff visualisation or a heat map</p>
+                
+            <div class="weekstyle2">
+                    <h3>Chart A </h3>
+                    <div class="chart" id="Chart22"></div>
+            </div>
+            
+            <div class="weekstyle2">
+                    <h3>Chart B </h3>
+                    <div class="chart" id="Chart23"></div>
+            </div>
+            
+            <div class="text">
+                    <p> These charts show...  </p>
+             </div>
+        
+         </div>
+    
+        
+<!------------------------------------------- Footer  ------------------------------------------->
+
+<div class="backbutton">
+    <b href="index.html" id="link">Back to Homepage</b>  
+    </div>
+
+
 </body>
 
 <script>
-    //Define charts:
+    
+    //--------------------------------------Define charts--------------------------------------------:
     var myChart1 = "chartPSF1.json";
     var myChart2 = "chartENV10.json";
     var myChart3 = "chart_IMF.json";
@@ -179,20 +248,22 @@
     var myChart5 = "chart_inf.json";
     var myChart6 = "chart_inf_edited.json";
     var myChart7 = "chart_medals.json";
-    var myChart8 = "data_scraper_beautiful_soup.json";
-    var myChart9 = "chart_ons_total.json";
-    var myChart10 = "chart_ons_men.json";
-    var myChart11 = "chart_ons_women.json";
-    var myChart12 = "chart_ons_16.json";
-    var myChart13 = "chart_ons_1824.json";
-    var myChart14 = "chart_ons_2534.json";
-    var myChart15 = "chart_ons_3549.json";
-    var myChart16 = "chart_ons_5064.json";
-    var myChart17 = "chart_ons_65+.json";
-    var myChart18 = "chart_base_map.json";
-    var myChart19 = "chart_house_price_map.json";
+    var myChart8 = "chart_ons_total.json";
+    var myChart9 = "chart_ons_men.json";
+    var myChart10 = "chart_ons_women.json";
+    var myChart11 = "chart_ons_16.json";
+    var myChart12 = "chart_ons_1824.json";
+    var myChart13 = "chart_ons_2534.json";
+    var myChart14 = "chart_ons_3549.json";
+    var myChart15 = "chart_ons_5064.json";
+    var myChart16 = "chart_ons_65+.json";
+    var myChart17 = "chart_base_map.json";
+    var myChart18 = "chart_house_price_map.json";
+    var myChart19 = "chart_CPIH.json";
+    var myChart20 = "chart_spending.json";
+ 
 
-    // Embed charts:
+    // --------------------------------------------Embed charts-------------------------------------:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
@@ -212,6 +283,8 @@
     vegaEmbed('#Chart17', myChart17);
     vegaEmbed('#Chart18', myChart18);
     vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
+
    
 </script>
 

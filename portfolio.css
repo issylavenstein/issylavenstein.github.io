@@ -144,3 +144,65 @@ h3{text-decoration: underline;}
     margin-left: 10px;
     margin-bottom: 20px; 
 }
+/* Setting the apperance of the Week 8 charts, which we want bigger and centred*/
+.chartweek8{
+    align-items: center;
+    background-color: white;
+    width:650px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 125px;
+    margin-bottom: 20px;
+    
+}
+
+.backbutton{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-content: center;
+    max-width: 800px;
+  }
+  
+    /* Button Options */
+    b{
+      border: 15px;
+      border-color: black;
+      border-style: solid;
+      text-align: center;
+      margin-left: 280px;
+    
+     
+  }
+  
+  #link{
+      background-color: rgba(115, 98, 138, .9);
+  
+      padding:30px;
+      
+      border:2px;
+      border-color:grey;
+      border-style: solid;
+      border-radius: 10px;
+  
+      font-family: 'Courier New', Courier, monospace;
+      font-weight:700;
+      color:white;
+      
+      text-decoration: none;
+   
+      
+  }
+  
+  #link:hover{
+  
+      background-color: rgba(115, 98, 138, .6);
+  
+      border:2px;
+      border-color:rgb(1, 1, 0);
+      border-style: solid;
+      
+  }
