@@ -1,0 +1,93 @@
+Country,Year,Average Price
+Scotland,2000,51628
+Scotland,2001,54122
+Scotland,2002,53649
+Scotland,2003,77097
+Scotland,2004,79665
+Scotland,2005,93982
+Scotland,2006,109380
+Scotland,2007,126699
+Scotland,2008,138388
+Scotland,2009,124484
+Scotland,2010,128973
+Scotland,2011,129746
+Scotland,2012,125728
+Scotland,2013,122594
+Scotland,2014,127007
+Scotland,2015,134956
+Scotland,2016,136790
+Scotland,2017,138356
+Scotland,2018,146889
+Scotland,2019,149769
+Scotland,2020,153518
+Scotland,2021,164940
+Scotland,2022,183910
+Northern Ireland,2000,66905
+Northern Ireland,2001,81797
+Northern Ireland,2002,73164
+Northern Ireland,2003,91027
+Northern Ireland,2004,96620
+Northern Ireland,2005,111920
+Northern Ireland,2006,131302
+Northern Ireland,2007,198950
+Northern Ireland,2008,198362
+Northern Ireland,2009,140190
+Northern Ireland,2010,135701
+Northern Ireland,2011,119024
+Northern Ireland,2012,104712
+Northern Ireland,2013,97428
+Northern Ireland,2014,103570
+Northern Ireland,2015,110940
+Northern Ireland,2016,118851
+Northern Ireland,2017,124786
+Northern Ireland,2018,130292
+Northern Ireland,2019,135434
+Northern Ireland,2020,140722
+Northern Ireland,2021,149084
+Northern Ireland,2022,163877
+England,2000,75219
+England,2001,84377
+England,2002,96215
+England,2003,121610
+England,2004,139719
+England,2005,158572
+England,2006,166544
+England,2007,181824
+England,2008,191750
+England,2009,162673
+England,2010,174458
+England,2011,174442
+England,2012,174179
+England,2013,176816
+England,2014,188265
+England,2015,202856
+England,2016,220361
+England,2017,231593
+England,2018,241061
+England,2019,244641
+England,2020,247898
+England,2021,266588
+England,2022,291492
+Wales,2000,52052
+Wales,2001,55438
+Wales,2002,61728
+Wales,2003,77798
+Wales,2004,98912
+Wales,2005,123815
+Wales,2006,129914
+Wales,2007,139760
+Wales,2008,146364
+Wales,2009,125021
+Wales,2010,127733
+Wales,2011,127771
+Wales,2012,127097
+Wales,2013,127584
+Wales,2014,131603
+Wales,2015,136148
+Wales,2016,140015
+Wales,2017,146395
+Wales,2018,153128
+Wales,2019,158548
+Wales,2020,163205
+Wales,2021,181118
+Wales,2022,206152
