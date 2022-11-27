@@ -9,10 +9,16 @@
   "anchor": "start",
   "color": "black"
 },
-  "data": {"url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/quintile_hhspending.csv"},
 
-  "height": 250,
+ "height": 250,
   "width": 250,
+
+  "data": {"url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/quintile_hhspending.csv"},
+  
+    "transform": [{
+      "calculate": "if(datum.Type === 'Housing, water, electricity', 0, if(datum.Type === 'Food and non-alcoholic drinks', 1 ,if(datum.Type === 'Clothing and footwear', 2 , 3)))",
+      "as": "TypeOrder"
+    }],
 
   "params": [
     {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
@@ -46,6 +52,7 @@
     },
     
     "order": {"field": "TypeOrder"},
+
     "tooltip": [
       {
         "field": "Value",

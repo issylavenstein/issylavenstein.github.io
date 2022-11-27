@@ -213,18 +213,18 @@
                 histograms, detrended shock analysis, Diff in Diff visualisation or a heat map</p>
                 
             <div class="weekstyle2">
-                    <h3>Chart A </h3>
-                    <div class="chart" id="Chart1"></div>
+                    <h3>Heat Map </h3>
+                    <div class="chartweek7" id="Chart21"></div>
             </div>
             
             <div class="weekstyle2">
-                    <h3>Chart B </h3>
-                    <div class="chart" id="Chart1"></div>
+                    <h3>Trellis Chart </h3>
+                    <div class="chartweek7" id="Chart22"></div>
             </div>
             
-            <div class="text">
+          
                     <p> These charts show...  </p>
-             </div>
+          
         
          </div>
     
@@ -259,6 +259,8 @@
     var myChart18 = "chart_house_price_map.json";
     var myChart19 = "chart_CPIH.json";
     var myChart20 = "chart_spending.json";
+    var myChart21 = "chart_heatmap.json";
+    var myChart22 = "chart_country_hp.json";
  
 
     // --------------------------------------------Embed charts-------------------------------------:
@@ -282,6 +284,8 @@
     vegaEmbed('#Chart18', myChart18);
     vegaEmbed('#Chart19', myChart19);
     vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
+    vegaEmbed('#Chart22', myChart22);
 
    
 </script>
