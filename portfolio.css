@@ -47,13 +47,25 @@ h3{text-decoration: underline;}
     border-color: rgb(24, 54, 66);
 
 }
+/* Regular Text*/
 .text{
     margin: auto;
     align-content: center;
     max-width: 900px;
     background-color: #EAEAEA;
-    padding: 30px
+    padding: 30px;
 }
+
+/* Text alongside chart*/
+.sidebysidetext{
+    margin: auto;
+    align-content: center;
+    max-width: 900px;
+    background-color: #EAEAEA;
+    padding-top: 160px;
+    padding-bottom: 160px; 
+}
+
 
 /* Div to put each of the weekly tasks into */
 .weekstyle{
@@ -64,18 +76,41 @@ h3{text-decoration: underline;}
     background-color: #EAEAEA;
     padding: 20px;
 
-      
     border-width: 3px;
     border-style: solid;
     border-radius: 15px;
     border-color: rgb(24, 54, 66);
 }
+.week9style{
+    margin: auto;
+    margin-top: 30px;
+    align-content: center;
+    max-width: 900px;
+    height: 1050px;
+    background-color: #EAEAEA;
+    padding: 20px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(24, 54, 66);
+}
+
 /* Div when have 2 charts to display for each week */
 .weekstyle2{
     margin-left:10px;
     align-content: center;
     width: 430px;
     float:left;
+    background-color: #EAEAEA;   
+}
+
+/* Div for displaying chart on right of page*/
+.weekstyleright{
+    margin-left:10px;
+    align-content: center;
+    width: 430px;
+    float:right;
     background-color: #EAEAEA;   
 }
 /* Setting the apperance of chart- use for standard template the weekly tasks */
@@ -135,13 +170,13 @@ h3{text-decoration: underline;}
 .chartweek7{ 
     align-items: center;
     background-color: white;
-    width:415px;
-    height:400px;
+    width:725px;
+    height:700px;
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
     border-color: #313d5a;
-    margin-left: 10px;
+    margin-left: 75px;
     margin-bottom: 20px; 
 }
 /* Setting the apperance of the Week 8 charts, which we want bigger and centred*/
@@ -157,9 +192,25 @@ h3{text-decoration: underline;}
     margin-top: 10px;
     margin-left: 125px;
     margin-bottom: 10px;
+}
+
+.chartweek9{
+    align-items: center;
+    background-color: white;
+    width:420px;
+    height:450px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 10px;
+    margin-bottom: 20px;
     
 }
 
+
+  /* Setting the div for button at the bottom of page */
 .backbutton{
     margin: auto;
     margin-top: 50px;
