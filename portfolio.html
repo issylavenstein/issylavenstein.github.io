@@ -32,10 +32,11 @@
     <h2>Week 1</h2>
 </div>
 
+
     <div class="weekstyle">
 
              <p>Our first task was to embed two interactive charts from the 
-            <a href="https://rapidcharts.io/dashboards" target="_blank">Rapid Charts</a> repository and display them on our site</p>
+            <a href="https://rapidcharts.io/dashboards" target="_blank">Rapid Charts</a> repository and display them on our site.</p>
             
          <div class="weekstyle2">
             <h3>UK budget deficit</h3>
@@ -49,7 +50,7 @@
          <div class="chart" id="Chart2"></div>
         </div>
 
-        <p> These charts were created by using the exemplar code on the rapid charts repository</p>
+        <p> These charts were created by using the exemplar code from Rapid Charts.</p>
 
     </div>
 
@@ -59,7 +60,7 @@
 </div>
         <div class="weekstyle">
 
-        <p>Our next task was to embed two charts relating to IMF lending 1984-2022, one replicating that of an FT article and one improving this chart to adjust for inflation</p>
+        <p>Our next task was to embed two charts relating to IMF lending 1984-2022, one replicating that of an FT article and one improving this chart to adjust for inflation.</p>
 
    <div class="weekstyle2">
         <h3>IMF Loans Outstanding</h3>
@@ -73,9 +74,9 @@
         <div class="chart" id="Chart4"></div>
     </div>
 
-        <p> These charts shows that relative to GDP (and hence affordability), the IMF lent most in 1984. This suggests that 2022 was infact not the riskier year for investment, as lending was only greatest in absolute terms </p>
+        <p> These charts shows that relative to GDP (and hence affordability), the IMF lent most in 1984. This suggests that 2022 was infact not the riskier year for investment, as lending was only greatest in absolute terms. </p>
        
-        <p> These charts were created by hosting data on my GitHub repository after transforming it at the analysis stage </p>
+        <p> These charts were created by hosting data on my GitHub repository after transforming it at the analysis stage. </p>
 
     </div>
 <!------------------------------------------- Week 3----------------------------------------- -->
@@ -116,7 +117,7 @@
 
         <h3>London 2012 Olympics Medal Table </h3>
         <div class="chartweek4" id="Chart7"></div>
-        <p>This chart uses an html scraper of a table displayed online at ESPN. I chose this website becase it was clearly coded with the table tag, which I could copy, save as an html and then read in pandas</p>
+        <p>This chart uses an html scraper of a table displayed online at ESPN. I chose this website becase it was clearly coded with the table tag, which I could copy, save as an html and then read in pandas.</p>
        
         
     </div>
@@ -153,11 +154,11 @@
         <div class="weekstyle">
     
             <p> This weeks task was to produce a new base map using GeoJSON, and then to convert this to a choropleth map by matching the map GeoJSON with
-                another dataset to producing a colour tinted map </p>
+                another dataset to producing a colour tinted map. </p>
     
      
             <h3>GB Base Map </h3>
-            <div class="chartweek7" id="Chart17"></div>
+            <div class="chartweek7i" id="Chart17"></div>
        
       
             <h3>Median House Prices in Great Britain </h3>
@@ -191,7 +192,7 @@
     
          
                 <h3>Breakdown of Spending by Income Quartile </h3>
-                <div class="chartweek8" id="Chart20"></div>
+                <div class="chartweek8i" id="Chart20"></div>
         
         
     
@@ -206,34 +207,34 @@
         <h2>Week 9</h2>
     </div>
     
-        <div class="week9style">
+        <div class="weekstyle">
     
             <p> This weeks task was to produce two charts that use advanced analytics such as scatter and bubble plots, 
-                histograms, detrended shock analysis, Diff in Diff visualisation or a heat map</p>
+                histograms, detrended shock analysis, Diff in Diff visualisation or a heat map.</p>
                 
-            <div class="weekstyle2">
-                    <h3>Heat Map of House Price Affordability </h3>
-                    <div class="chart" id="Chart21"></div>
-            </div>
             
-            <div class="sidebysidetext">
+                    <h3>Heat Map of House Price Affordability </h3>
+                    <div class="chartweek9i" id="Chart21"></div>
+           
+            
+            
                 <p>For the first chart, I looked at instances of house price growth and average income growth within each year. 
                     The concentration of the heat does not offer any clear conclusions, but their are far more occurances of house
                     price growth exceeding income growth.
                 </p>
-             </div>
+            
 
-             <div class="weekstyleright">
+             
                 <h3>Trellis Chart of Country House Prices </h3>
                 <div class="chartweek9" id="Chart22"></div>
-             </div>
+           
 
-             <div class="sidebysidetext">
+             
                 <p> The second chart uses a Trellis to show how across the UK, the 4 countries have seen similar patterns in house 
                     price growth since 2005, but that average prices in England are considerably higher, likely due to the influence
                     of London driving up averages.
                 </p>
-            </div>
+          
 
            
         </div>
@@ -244,9 +245,29 @@
     </div>
     
         <div class="weekstyle">
-    
-            <p> This weeks task was to use machine leaarning</p>  
+            <p> This weeks task was to conduct an applied data analysis using two of the four learnt machine learning techniques.</p>  
 
+            <h3>Supervised Learning- Regression </h3>
+            <img src="new_regression.png" alt="Income on Life Expectancy"/>
+            
+            <p>I wanted to test the relationship between Income and Life Expectancy for a full sample of countries in 2022. 
+                I used sklearn to run a linear regression, and found a positive relationship between the two variables by fitting the data. 
+            </p>
+    
+           
+     
+            <h3>Unsupervised Learning- Dimensionality Reduction </h3>
+            <div class="chartweek10" id="Chart24"></div>
+    
+            <p>I wanted to use Dimensionality Reduction through Principal Component Analysis to try to determine whether regions could be identified by their development.
+            This was run using 5 key development indicators, which can be seen in the tooltip. 
+            </p>
+        
+            <p>This machine learning analysis shows countries within the same continent are roughly grouped together. 
+                This is particularly effective for Europe and Africa .</p>
+        
+            <p>The analysis was conducted using Python in
+                <a href="https://colab.research.google.com/drive/1TsyBG4jDCHmG7zH64rY1KkbsZALNV9O_?usp=sharing" target="_blank">Google Colab</a>.</p>
      </div>
 
 <!------------------------------------------- Footer  ------------------------------------------->
@@ -278,10 +299,11 @@
     var myChart17 = "chart_base_map.json";
     var myChart18 = "chart_house_price_map.json";
     var myChart19 = "chart_CPIH.json";
-    var myChart20 = "chart_spending.json";
+    var myChart20 = "chart_new_spending.json";
     var myChart21 = "chart_heatmap.json";
     var myChart22 = "chart_country_hp.json";
- 
+    var myChart23 = "chart_heatmap.json";
+    var myChart24 = "chart_MLDR.json";
 
     // --------------------------------------------Embed charts-------------------------------------:
     vegaEmbed('#Chart1', myChart1);
@@ -306,6 +328,8 @@
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
     vegaEmbed('#Chart22', myChart22);
+    vegaEmbed('#Chart23', myChart23);
+    vegaEmbed('#Chart24', myChart24);
 
    
 </script>

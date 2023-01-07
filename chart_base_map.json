@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 600,
+    "width": 500,
+    "height": 500,
     "title": {
-      "text": "Great Britain",
-      "subtitle": ["GB by Local Authority Area"],
+      "text": "Base Map of Great Britain",
+      "subtitle": "GB by Local Authority Area. Source: ONS Geoportal ",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
@@ -12,7 +12,7 @@
       "subtitleColor": "#000000"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/martinjc/UK-GeoJSON/master/json/administrative/gb/lad.json",
+      "url": "https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/gb%20base%20map.json",
       "format": {"property": "features"}
     },
     "projection": {"type": "mercator"},
