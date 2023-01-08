@@ -60,7 +60,7 @@
         <h3>House Prices in England over time</h3>
         <div class="chartA" id="ChartA"></div>
 
-        <p>This map uses Geojson from ONS Geoportal and a comprehensive csv file from the ONS to highlight how prices have grown across England, but not uniformly- 
+        <p>This map uses Geojson from ONS Geoportal and a comprehensive csv file from ONS to highlight how prices have grown across England, but not uniformly- 
             the highest rises have been concentrated in London and the South East. </p>  
          
             <h3>House Price growth across the years</h3>
@@ -77,18 +77,18 @@
      <div class="container">
 
         <h2> Causes of Rising Prices </h2>
-        <p>The purported driving forces behind price rises are an increase in demand and decrease in supply for houses. I therefore analyse mortgage rate data (demand), 
-            focusing on 2-year-75%LTV fixed rates from Bank of England, and housebuilding data (supply) from DLUHC. I concatenated a line-chart and regression for comparison, 
-            and made both interactive through changing time period with the slider. 
+        <p>The purported driving forces behind price rises are an increase in demand and decrease in supply for homes. I therefore analyse mortgage rate (demand), 
+            focusing on 2-year-75%LTV fixed rates from Bank of England, and housebuilding data (supply) from DLUHC. I concatenated a line-chart and regression for comparison- the 
+            time period can be changed with the slider. 
          </p>  
 
         <h3>The effects of mortgage rates</h3>
         <div class="chartC" id="ChartC"></div>
 
         <p>Mortgage rates steadily declined post 2000 before rapidly shooting up in early 2022. 
-            I find the expected conclusion that higher mortgage rates are associated with lower house prices, since they reduce borrowing costs.</p>
+            I find the expected conclusion that higher rates are associated with lower house prices, since they reduce borrowing costs.</p>
             
-        <p>Given the Bank of England's commitment to necessary interest rate rises to combat inflation, mortgage rates will stay high, 
+        <p>Given the Bank of England's commitment to interest rate rises to combat inflation, mortgage rates will stay high, 
             which could reduce demand and hence prices.   </p>  
          
             <h3>The effects of housebuilding</h3>
@@ -102,7 +102,7 @@
        
         <div class="text">
             <p>After falling during the 2008 recession, housebuilding has steadily increased, predominantly through private enterprise. 
-                The positive correlation with prices counteracts economic theory- this suggests supply increases are not matching greater demand from rising number of households, driving up prices. 
+                The negative correlation supports economic theory- but low Rsquared suggests demand factors are more significant. 
             </p>
             </div>
             
@@ -158,7 +158,7 @@
                 <h2> Conclusions </h2>
         
                 <p>Measures of affordability indicate sustained house price rises of the past decade cannot likely continue, with prices vastly outstripping incomes. 
-                    The greatest price increases are highly localised- one could therefore expect regional declines as opposed to national, which could be a topic for further analysis.  
+                    The greatest price increases are localised- one could expect regional price declines as opposed to national, a topic for further analysis.  
                     </p>
                     <p>
                     It is worth noting the housing market moves slowly, as houses are illiquid assets. Most recent data from Rightmove and Zoopla is only just showing small declines 
@@ -176,8 +176,8 @@
                     hosts all datasets and chart specifications. To facilitate replication, I have supplied original data sources, any google colabs and all clean csv files. 
                 </p>
                     <p>
-                    This analysis makes extensive use of ONS data, which could be readily batch downloaded. 
-                    While Zoopla and Nationwide both operate useful property APIs, these could unfortunately only be accessed by those with commercial purposes, 
+                    This analysis makes extensive use of ONS data, which could be batch downloaded. 
+                    While Zoopla and Nationwide both operate useful property APIs, these could unfortunately only be accessed for commercial purposes, 
                     and so I was unable to produce house price charts which live-update. 
                  </p>  
                  
@@ -236,7 +236,7 @@
     
     <p>Figure 7: Trends in Google Searches | Data Source: <a
         href="https://trends.google.com/trends/?geo=GB">Google Trends</a> |
-        My Google Colab: <a href="https://colab.research.google.com/drive/1D5vEJItLfdacA3KKVJFoI8juVGkHp0rR?usp=sharing">Google Trends Scraper</a> | 
+        My Google Colab: <a href="https://colab.research.google.com/drive/1D5vEJItLfdacA3KKVJFoI8juVGkHp0rR?usp=sharing#scrollTo=PaXKZaZoVSr7">Google Trends Scraper</a> | 
         My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/affordability_clean.csv">Affordability Trellis</a>
     </p> 
      
@@ -250,7 +250,6 @@
     var myChartA = "england_house_prices.json";
     var myChartB = "regional_prices.json";
     var myChartC = "chart_mortgage.json";
-    var myChartD = "chart_housebuilding.json";
     var myChartDi = "housebuilding_line.json";
     var myChartDii = "house_building_regression.json";
     var myChartE = "chart_heatmap.json";

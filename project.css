@@ -34,7 +34,7 @@ h3{text-decoration: bold;}
     background-color: #48494b;
     overflow: hidden;
     justify-items: right;
-    border-bottom:1px solid #EFEEF5;
+    border-bottom:2px solid #EFEEF5;
     margin-right: 0;
     font-family: 'Mukta', sans-serif;
     opacity: 100%;
@@ -48,7 +48,7 @@ h3{text-decoration: bold;}
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
   }
   
   /* Change the color of links on hover */
