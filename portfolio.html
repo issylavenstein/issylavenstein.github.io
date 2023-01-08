@@ -18,20 +18,34 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+      <!--These lines of code will hopefully format the page and render the content to match any screen size.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 
-
 <body>
- <!-- Page Header  -->
+ <!------------------------------------------- Navigation Bar ----------------------------------------->
+ <div class="navigationbar">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="project.html">Project</a>
+    <a href="https://rapidcharts.io/datascience">Course</a>
+    <a href="https://github.com/issylavenstein/issylavenstein.github.io">Github</a>
+</div>
+ 
+<!------------------------------------------- Page Heading ----------------------------------------->
+    <h1> Portfolio</h1>
+    <p>Isabel Lavenstein | Student ID: 2077550</p>
 
- <h1>My Portfolio</h1>
 
 <!------------------------------------------- Week 1  ----------------------------------------->
+
+
 <div class="weektitle">
     <h2>Week 1</h2>
 </div>
-
 
     <div class="weekstyle">
 
@@ -248,8 +262,9 @@
             <p> This weeks task was to conduct an applied data analysis using two of the four learnt machine learning techniques.</p>  
 
             <h3>Supervised Learning- Regression </h3>
+            <div class="chartweek10" 
             <img src="new_regression.png" alt="Income on Life Expectancy"/>
-            
+        </div>
             <p>I wanted to test the relationship between Income and Life Expectancy for a full sample of countries in 2022. 
                 I used sklearn to run a linear regression, and found a positive relationship between the two variables by fitting the data. 
             </p>

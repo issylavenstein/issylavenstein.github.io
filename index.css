@@ -1,50 +1,38 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my second CSS file */
-
-
-/* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-/* Set the background color for my page: */
-
-/* Book on colour = Joseph Albers - Interaction of Colour */
-
 body{
-    background-color: rgb(201, 217, 221);
- }
-
-
-/* Choose the appearance of the tags, h1, h3 and p: */
-h1, h2, h3, p{
-    color:rgb(0, 0, 0);
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
+    background-color: #48494b;
 }
-    
-.myWeek1{
+
+.header{
     margin: auto;
-    max-width: 600px;
-    background-color: rgb(221, 233, 242);
-
-      
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 15px;
-    border-color: rgb(108, 134, 198);
+    margin-top: 20%;
+    align-content: center;
+    max-width: 800px;
+    background-color: #48494b;
+  
 }
 
-
-/* Set the apperance of the class, chart */
-.chart{
+.indexbutton {
+    display: flex;
     align-items: center;
-    background-color: white;
-    width:450px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: grey;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px 10px 0px 
+}
+
+
+#link1{
+    background-color: #48494b;
+    font-family: 'Mukta', sans-serif;
+    font-weight:600;
+    color:white;
+    text-align: none;
     
 }
-    
 
+#link1:hover{
+    background-color: #48494b;
+    font-family: 'Mukta', sans-serif;
+    font-weight:600;
+    color:#7852A9;
+    
+}

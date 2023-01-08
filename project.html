@@ -1,29 +1,278 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>ICL Project Page</title>
 
+    <!-- Link to my style sheet -->
     <link rel="stylesheet" href="project.css">
 
-    <title>Document</title>
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <!--These lines of code will hopefully format the page and render the content to match any screen size.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
+
+ <!------------------------------------------- Navigation Bar ----------------------------------------->
+ <div class="navigationbar">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="project.html">Project</a>
+    <a href="https://rapidcharts.io/datascience">Course</a>
+    <a href="https://github.com/issylavenstein/issylavenstein.github.io">Github</a>
+</div>
+
+ <!------------------------------------------- Page Heading ----------------------------------------->
+    <h1> Data Science Project</h1>
+    <p>Isabel Lavenstein | Student ID: 2077550</p>
+ 
+    <div class="question">
+<h1>House Prices- is the Bubble about to Burst?</h1>
+</div>
+<!------------------------------------------- Charts A and B- map of England and regional house Prices over time  ----------------------------------------->
+
+    <div class="container">
+
+        <h2> Aims </h2>
+        <p>House prices in England seem to be permanently on this rise. This project aims to establish whether this rise is sustainable, and if not, is a house price crash imminent?
+        </p>
     
-<h1>Project Page</h1>
+        <p>My project will focus on England due to greater availability and depth of data. I try to visualise England's housing market, analysing reasons for price growth and the impact this has on affordability and future sustainability.  
+        </p>
+    
+        <p>I acknowledge there are myriad factors which determine house prices, which regretfully cannot all be analysed.</p>   
 
-<p>Here is a paragram</p>
+        <h2> Background </h2>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+        <h3>House Prices in England over time</h3>
+        <div class="chartA" id="ChartA"></div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+        <p>This map uses Geojson from ONS Geoportal and a comprehensive csv file from the ONS to highlight how prices have grown across England, but not uniformly- 
+            the highest rises have been concentrated in London and the South East. </p>  
+         
+            <h3>House Price growth across the years</h3>
+            <div class="chartB" id="ChartB"></div>
+            <p>To better visualise this heterogeneity, I produced a region-selectable time-series chart and ordered regions by house price. 
+                I built a scraper in
+                <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing" target="_blank">Google Colab</a>
+                that looped over different regions to request average house price data from the HM Land Registry url. This was manually merged 
+                with data on volume of sales, which is revealed by tooltip </p> 
+         
+     </div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+     <!------------------------------------------- Charts C and D-explanations of rising prices  ----------------------------------------->
+     <div class="container">
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+        <h2> Causes of Rising Prices </h2>
+        <p>The purported driving forces behind price rises are an increase in demand and decrease in supply for houses. I therefore analyse mortgage rate data (demand), 
+            focusing on 2-year-75%LTV fixed rates from Bank of England, and housebuilding data (supply) from DLUHC. I concatenated a line-chart and regression for comparison, 
+            and made both interactive through changing time period with the slider. 
+         </p>  
+
+        <h3>The effects of mortgage rates</h3>
+        <div class="chartC" id="ChartC"></div>
+
+        <p>Mortgage rates steadily declined post 2000 before rapidly shooting up in early 2022. 
+            I find the expected conclusion that higher mortgage rates are associated with lower house prices, since they reduce borrowing costs.</p>
+            
+        <p>Given the Bank of England's commitment to necessary interest rate rises to combat inflation, mortgage rates will stay high, 
+            which could reduce demand and hence prices.   </p>  
+         
+            <h3>The effects of housebuilding</h3>
+            <div class="weekstyle2">
+                <div class="chartDi" id="ChartDi"></div>
+             </div>
+    
+             <div class="weekstyle2">
+             <div class="chartDii" id="ChartDii"></div>
+            </div>
+       
+        <div class="text">
+            <p>After falling during the 2008 recession, housebuilding has steadily increased, predominantly through private enterprise. 
+                The positive correlation with prices counteracts economic theory- this suggests supply increases are not matching greater demand from rising number of households, driving up prices. 
+            </p>
+            </div>
+            
+            
+     </div>
+
+     <!------------------------------------------- Charts E and F- metrics on affordability  ----------------------------------------->
+     <div class="container">
+
+        <h2> Questions of Affordability </h2>
+
+        <p>A central aspect of whether price rises are unsustainable is property affordability. 
+            To determine whether house prices move with incomes, I produced a heat map using manually computed growth rates from ONS income and average house price data. 
+            I charted 3 affordability measures using ONS data in a Trellis Chart. 
+         </p>  
+
+         <h3>Do House Prices move with real incomes?</h3>
+         <div class="chartE" id="ChartE"></div>
+ 
+         <p>Growth in house prices exceeds growth in real incomes. As the UK faces a recession, the likely low growth in real wages could see a 
+             year on year decline in prices. 
+         </p> 
+        <h3>Are houses becoming unaffordable?</h3>
+        <div class="chartF" id="ChartF"></div>
+
+        <p>While advance/price has remained relatively constant, 
+            price and advance compared to income have risen dramatically. Incomes have not kept up with property prices- houses are ever-increasingly unaffordable, which could cool demand.  
+        </p>
+         
+  
+        </p>
+     </div>
+    
+     <!------------------------------------------- Chart G- latest data  ----------------------------------------->
+     <div class="container">
+
+        <h2> What is the populous thinking about a housing crash? </h2>
+
+        <p>I then considered whether the notion of a housing bubble had reached public consciousness. I built a scraper of the unofficial Google Trends API using <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing" target="_blank">Google Colab</a> 
+            to determine whether search interest had increased, as crashes are often self-fulfilling.  
+         </p>  
+
+        <h3>An increase of search activity</h3>
+        <div class="chartG" id="ChartG"></div>
+
+        <p>There has indeed been increased interest in the last 3 months- greater discussion around price falls could cause people to delay housing purchases, depressing prices.
+        </p>
+     </div>
+
+              <!------------------------------------------- Conclusions  ----------------------------------------->
+              <div class="container">
+
+                <h2> Conclusions </h2>
+        
+                <p>Measures of affordability indicate sustained house price rises of the past decade cannot likely continue, with prices vastly outstripping incomes. 
+                    The greatest price increases are highly localised- one could therefore expect regional declines as opposed to national, which could be a topic for further analysis.  
+                    </p>
+                    <p>
+                    It is worth noting the housing market moves slowly, as houses are illiquid assets. Most recent data from Rightmove and Zoopla is only just showing small declines 
+                    in house price growth compared to last year. Instead of a large-scale bursting bubble, a market correction appears more likely given historic near permanence of ever-increasing prices.  
+                 </p>  
+                 
+             </div>
+
+             <!------------------------------------------- Notes on automation and replicability  ----------------------------------------->
+             <div class="container">
+
+                <h2> Notes on Automation and Replicability </h2>
+        
+                <p>Much of my data is recorded monthly/annually, so I used python to convert data-frames from wide to long format. <a href="https://github.com/issylavenstein/issylavenstein.github.io" id="link1">Github</a> 
+                    hosts all datasets and chart specifications. To facilitate replication, I have supplied original data sources, any google colabs and all clean csv files. 
+                </p>
+                    <p>
+                    This analysis makes extensive use of ONS data, which could be readily batch downloaded. 
+                    While Zoopla and Nationwide both operate useful property APIs, these could unfortunately only be accessed by those with commercial purposes, 
+                    and so I was unable to produce house price charts which live-update. 
+                 </p>  
+                 
+             </div>
+            
+             <!------------------------------------------- Notes on challenges ----------------------------------------->
+             <div class="container">
+
+                <h2> Challenges in Data Cleaning and Analysis </h2>
+        
+                <p>The main challenge of Figure 2 was ensuring region names were correctly formatted to successfully loop. 
+                    Regions with multiple words e.g. ‘North West’ had to be hyphenated and decapitalised to ‘north-west’ to feed into the URL base. 
+                    My analysis has limited scope from 1995-2022 due to loop requirements of specifying dates, and a lack of up-to-date Land Registry data. To track current trends, the most recent data would be necessary. 
+                </p>
+                    <p>
+                    A challenge in producing Figure 7 was hitting request blocks when trying to scrape Google Trends- I resolved this by using proxies detailed on <a href="https://pypi.org/project/pytrends/#interest-over-time" id="link1">pytrends</a> when testing. 
+                    One challenge for replicability is that my scraper accesses Google Trends, which updates to new searches daily. Therefore, the scraper would have to be re-run and charts manually updated. 
+                     
+                 </p>  
+                 
+             </div>
+
+ <!------------------------------------------- References  ----------------------------------------->
+ <div class="container">
+
+    <h2> References </h2>
+
+    <p>Figure 1: England House Prices by Local Authority | Data Source: <a
+        href="https://geoportal.statistics.gov.uk/">ONS Geoportal</a> & <a
+        href="https://www.ons.gov.uk/datasets/house-prices-local-authority/editions/time-series/versions/10">ONS</a> | 
+        My Google Colab: <a href="https://colab.research.google.com/drive/1LPcDia3VgroTNPDVoE3IKFBXUxuWgZ0Y?usp=sharing">House Prices Tidy Data</a> | CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/house_price_map_data_corrected.csv">England House Price Map</a>
+    </p>
+    <p>Figure 2: England House Prices and Sales Volume by Region | Data Source: <a
+        href="https://landregistry.data.gov.uk/app/ukhpi/browse?from=1995-01-01&location=http%3A%2F%2Flandregistry.data.gov.uk%2Fid%2Fregion%2Funited-kingdom&to=2022-10-01&lang=en">Land Registry</a> |  My Google Colab: <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing">House Price Scraper</a> | 
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/regional_variation.csv">Regional House Prices</a>
+    </p>
+    <p>Figure 3: Mortgage Rates and House Prices | Data Source: <a
+        href="https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?Travel=NIxSTxTIxSUx&FromSeries=1&ToSeries=50&DAT=RNG&FD=1&FM=Jan&FY=1995&TD=7&TM=Jan&TY=2023&FNY=&CSVF=TT&html.x=95&html.y=49&C=EOT&Filter=N">Bank of England series IUBMV34</a> & <a
+        href="https://landregistry.data.gov.uk/app/ukhpi/browse?from=1995-01-01&location=http%3A%2F%2Flandregistry.data.gov.uk%2Fid%2Fregion%2Funited-kingdom&to=2022-10-01&lang=en">Land Registry</a> | 
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/mortgage_combined.csv">Mortgage Rates</a>
+    </p>
+    <p>Figures 4i and ii: Housebuilding and House Prices | Data Source: <a
+        href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-house-building">DLUHC Database</a> & <a
+        href="https://landregistry.data.gov.uk/app/ukhpi/browse?from=1995-01-01&location=http%3A%2F%2Flandregistry.data.gov.uk%2Fid%2Fregion%2Funited-kingdom&to=2022-10-01&lang=en">Land Registry</a> | 
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/mortgage_combined.csv">Housebuilding Rates</a>
+    </p>
+    <p>Figure 5: House Price Heat Map | Data Source: <a
+        href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours">ONS</a> & <a
+        href="https://landregistry.data.gov.uk/app/ukhpi/browse?from=1995-01-01&location=http%3A%2F%2Flandregistry.data.gov.uk%2Fid%2Fregion%2Funited-kingdom&to=2022-10-01&lang=en">HM Land Registry</a> |
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/hp_income_heat%20map.csv">Affordability Trellis</a>
+    </p>
+    <p>Figure 6: Measures of Affordability | Data Source: <a
+        href="https://www.gov.uk/government/collections/uk-house-price-index-reports">UK House Price Index</a> |
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/affordability_clean.csv">Affordability Trellis</a>
+    </p>
+    
+    <p>Figure 7: Trends in Google Searches | Data Source: <a
+        href="https://trends.google.com/trends/?geo=GB">Google Trends</a> |
+        My Google Colab: <a href="https://colab.research.google.com/drive/1D5vEJItLfdacA3KKVJFoI8juVGkHp0rR?usp=sharing">Google Trends Scraper</a> | 
+        My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/affordability_clean.csv">Affordability Trellis</a>
+    </p> 
+     
+</div>
 
 </body>
+
+<script>
+    
+    //--------------------------------------Define charts--------------------------------------------:
+    var myChartA = "england_house_prices.json";
+    var myChartB = "regional_prices.json";
+    var myChartC = "chart_mortgage.json";
+    var myChartD = "chart_housebuilding.json";
+    var myChartDi = "housebuilding_line.json";
+    var myChartDii = "house_building_regression.json";
+    var myChartE = "chart_heatmap.json";
+    var myChartF = "affordability_trellis.json";
+    var myChartG = "trends_trellis.json";
+   
+    // --------------------------------------------Embed charts-------------------------------------:
+    vegaEmbed('#ChartA', myChartA);
+    vegaEmbed('#ChartB', myChartB);
+    vegaEmbed('#ChartC', myChartC);
+    vegaEmbed('#ChartD', myChartD);
+    vegaEmbed('#ChartDi', myChartDi);
+    vegaEmbed('#ChartDii', myChartDii);
+    vegaEmbed('#ChartE', myChartE);
+    vegaEmbed('#ChartF', myChartF);
+    vegaEmbed('#ChartG', myChartG);
+
+  
+  
+
+   
+</script>
+
 
 </html>

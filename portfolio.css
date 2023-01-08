@@ -13,18 +13,49 @@ body{
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h2, p{
+h1, h3, p{
     color: white;
     font-family: 'Mukta', sans-serif;
     text-align: center;
 } 
 
-h3{
-    color: white;
+h2{
+    color: #7852A9;
     font-family: 'Mukta', sans-serif;
     text-align: center;
 } 
+
 h3{text-decoration: underline;}
+
+/* Add background color to the top navigation */
+.navigationbar {
+    position:relative;
+    background-color: #48494b;
+    overflow: hidden;
+    justify-items: right;
+    border-bottom:1px solid #EFEEF5;
+    margin-right: 0;
+    font-family: 'Mukta', sans-serif;
+    opacity: 100%;
+    color:#EFEEF5;
+  }
+  
+  /* Styling the links inside the navigation bar */
+  .navigationbar a {
+    float: left;
+    color: #EFEEF5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navigationbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
 
 /* Page headings for Portfolio and Project */
 .pagehead{
@@ -44,10 +75,11 @@ h3{text-decoration: underline;}
 .weektitle{
     margin: auto;
     align-content: center;
-    max-width: 500px;
-    background-color: #942d67;
-    border-radius: 3px;
-    border-color: #942d67
+    max-width: 800px;
+    background-color: #EFEEF5;
+    border-radius: 1px;
+    border-color: #7852A9;
+    border-style: double;
 
 }
 /* Regular Text*/
@@ -73,7 +105,7 @@ h3{text-decoration: underline;}
 /* Div to put each of the weekly tasks into */
 .weekstyle{
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     align-content: center;
     max-width: 900px;
     background-color: #48494b;
@@ -96,7 +128,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 15px;
-    border-color: #942d67;
+    border-color: #7852A9;
 }
 
 /* Div when have 2 charts to display for each week */
@@ -125,7 +157,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 35px;
     margin-bottom: 20px;
     
@@ -139,7 +171,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 10px;
     margin-bottom: 20px; 
 }
@@ -152,7 +184,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 275px;
     margin-bottom: 20px;
     
@@ -165,7 +197,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -178,7 +210,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 150px;
     margin-bottom: 20px; 
 }
@@ -191,7 +223,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 180px;
     margin-bottom: 20px; 
 }
@@ -204,7 +236,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-top: 10px;
     margin-left: 125px;
     margin-bottom: 10px;
@@ -218,7 +250,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-top: 10px;
     margin-left: 200px;
     margin-bottom: 10px;
@@ -233,7 +265,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 240px;
     margin-bottom: 20px;
     
@@ -248,7 +280,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 250px;
     margin-bottom: 20px;
     
@@ -263,7 +295,7 @@ h3{text-decoration: underline;}
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #942d67;
+    border-color: #7852A9;
     margin-left: 225px;
     margin-bottom: 20px;
     
