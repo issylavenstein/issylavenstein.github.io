@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,8 +67,8 @@
             <p>To better visualise this heterogeneity, I produced a region-selectable time-series chart and ordered regions by house price. 
                 I built a scraper in
                 <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing" target="_blank">Google Colab</a>
-                that looped over different regions to request average house price data from the HM Land Registry url. This was manually merged 
-                with data on volume of sales, which is revealed by tooltip </p> 
+                that looped over different regions to request average house price data from HM Land Registry. This was manually merged 
+                with data on volume of sales, which is revealed by tooltip. </p> 
          
      </div>
 
@@ -77,8 +76,8 @@
      <div class="container">
 
         <h2> Causes of Rising Prices </h2>
-        <p>The purported driving forces behind price rises are an increase in demand and decrease in supply for homes. I therefore analyse mortgage rate (demand), 
-            focusing on 2-year-75%LTV fixed rates from Bank of England, and housebuilding data (supply) from DLUHC. I concatenated a line-chart and regression for comparison- the 
+        <p>The purported driving forces behind price rises are an increase in demand and decrease in supply for houses. I therefore analyse mortgage rate data (demand), 
+            focusing on 2-year-75%LTV fixed rates from Bank of England, and housebuilding data (supply) from DLUHC. I concatenated a line-chart and regression for comparison- 
             time period can be changed with the slider. 
          </p>  
 
@@ -86,7 +85,7 @@
         <div class="chartC" id="ChartC"></div>
 
         <p>Mortgage rates steadily declined post 2000 before rapidly shooting up in early 2022. 
-            I find the expected conclusion that higher rates are associated with lower house prices, since they reduce borrowing costs.</p>
+            I find the expected conclusion that higher mortgage rates are associated with lower house prices, since they reduce borrowing costs.</p>
             
         <p>Given the Bank of England's commitment to interest rate rises to combat inflation, mortgage rates will stay high, 
             which could reduce demand and hence prices.   </p>  
@@ -102,7 +101,8 @@
        
         <div class="text">
             <p>After falling during the 2008 recession, housebuilding has steadily increased, predominantly through private enterprise. 
-                The negative correlation supports economic theory- but low Rsquared suggests demand factors are more significant. 
+                The negative correlation with prices follows economic theory, but the low R-Squared implies supply may not be a significant 
+                factor in driving up prices. 
             </p>
             </div>
             
@@ -122,14 +122,15 @@
          <h3>Do House Prices move with real incomes?</h3>
          <div class="chartE" id="ChartE"></div>
  
-         <p>Growth in house prices exceeds growth in real incomes. As the UK faces a recession, the likely low growth in real wages could see a 
-             year on year decline in prices. 
+         <p>Growth in house prices exceeds growth in real incomes. As the UK faces recession, the likely low growth in real wages could see a 
+            decline in prices. 
          </p> 
         <h3>Are houses becoming unaffordable?</h3>
         <div class="chartF" id="ChartF"></div>
 
         <p>While advance/price has remained relatively constant, 
-            price and advance compared to income have risen dramatically. Incomes have not kept up with property prices- houses are ever-increasingly unaffordable, which could cool demand.  
+            price and advance compared to income have risen dramatically. 
+            Incomes have not kept up with property prices- houses are ever-increasingly unaffordable, which could cool demand.  
         </p>
          
   
@@ -141,7 +142,7 @@
 
         <h2> What is the populous thinking about a housing crash? </h2>
 
-        <p>I then considered whether the notion of a housing bubble had reached public consciousness. I built a scraper of the unofficial Google Trends API using <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing" target="_blank">Google Colab</a> 
+        <p>I considered whether the notion of a housing bubble had reached public consciousness. I built scraped the unofficial Google Trends API using <a href="https://colab.research.google.com/drive/1SFzQ9amV4v7BE2aaT5tMDR7IKNSqqRMD?usp=sharing" target="_blank">Google Colab</a> 
             to determine whether search interest had increased, as crashes are often self-fulfilling.  
          </p>  
 
@@ -178,7 +179,7 @@
                     <p>
                     This analysis makes extensive use of ONS data, which could be batch downloaded. 
                     While Zoopla and Nationwide both operate useful property APIs, these could unfortunately only be accessed for commercial purposes, 
-                    and so I was unable to produce house price charts which live-update. 
+                    so I was unable to produce house price charts which live-update. 
                  </p>  
                  
              </div>
@@ -190,11 +191,11 @@
         
                 <p>The main challenge of Figure 2 was ensuring region names were correctly formatted to successfully loop. 
                     Regions with multiple words e.g. ‘North West’ had to be hyphenated and decapitalised to ‘north-west’ to feed into the URL base. 
-                    My analysis has limited scope from 1995-2022 due to loop requirements of specifying dates, and a lack of up-to-date Land Registry data. To track current trends, the most recent data would be necessary. 
+                    My analysis has limited scope from 1995-2022 due to loop requirements of specifying dates, and a lack of up-to-date Land Registry data. To track current trends, regular updates would be necessary. 
                 </p>
                     <p>
                     A challenge in producing Figure 7 was hitting request blocks when trying to scrape Google Trends- I resolved this by using proxies detailed on <a href="https://pypi.org/project/pytrends/#interest-over-time" id="link1">pytrends</a> when testing. 
-                    One challenge for replicability is that my scraper accesses Google Trends, which updates to new searches daily. Therefore, the scraper would have to be re-run and charts manually updated. 
+                    One challenge for replicability is that Google Trends updates to new searches daily. Therefore, the scraper would have to be re-run and charts manually edited for up-to-date statistics.  
                      
                  </p>  
                  
@@ -236,7 +237,7 @@
     
     <p>Figure 7: Trends in Google Searches | Data Source: <a
         href="https://trends.google.com/trends/?geo=GB">Google Trends</a> |
-        My Google Colab: <a href="https://colab.research.google.com/drive/1D5vEJItLfdacA3KKVJFoI8juVGkHp0rR?usp=sharing#scrollTo=PaXKZaZoVSr7">Google Trends Scraper</a> | 
+        My Google Colab: <a href="https://colab.research.google.com/drive/1D5vEJItLfdacA3KKVJFoI8juVGkHp0rR?usp=sharing">Google Trends Scraper</a> | 
         My CSV file: <a href="https://raw.githubusercontent.com/issylavenstein/issylavenstein.github.io/main/affordability_clean.csv">Affordability Trellis</a>
     </p> 
      
@@ -250,6 +251,7 @@
     var myChartA = "england_house_prices.json";
     var myChartB = "regional_prices.json";
     var myChartC = "chart_mortgage.json";
+    var myChartD = "chart_housebuilding.json";
     var myChartDi = "housebuilding_line.json";
     var myChartDii = "house_building_regression.json";
     var myChartE = "chart_heatmap.json";
